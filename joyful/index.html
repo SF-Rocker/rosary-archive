@@ -5,6 +5,10 @@
   <title>Joyful Mysteries Archive</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --marian-cyan: #007c91;
+    }
+
     body {
       margin: 0;
       padding: 2rem;
@@ -17,10 +21,23 @@
       text-align: center;
     }
 
-    .rosary-container img {
-      max-width: 300px;
+    .rosary-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .crest-left {
+      max-width: 180px;
       height: auto;
-      margin-bottom: 1rem;
+    }
+
+    .rosary-right {
+      max-width: 250px;
+      height: auto;
     }
 
     .mysteries {
@@ -29,27 +46,53 @@
       line-height: 1.6;
     }
 
-    .mystery {
-      margin-bottom: 2rem;
-    }
-
     .mystery h2 {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
-      color: #5a3e2b;
+      color: var(--marian-cyan);
     }
 
     .mystery p {
       font-size: 1rem;
       font-style: italic;
+      color: var(--marian-cyan);
+    }
+
+    .rosary-instructions {
+      background-color: #e0f7fa;
+      padding: 25px;
+      border-radius: 12px;
+      font-family: 'Garamond', 'Georgia', serif;
+      color: #003c3c;
+      box-shadow: 0 0 10px rgba(0,124,145,0.2);
+      text-align: center;
+      margin-top: 3rem;
+      max-width: 800px;
+    }
+
+    .rosary-instructions h2 {
+      color: var(--marian-cyan);
+    }
+
+    .rosary-instructions a {
+      color: var(--marian-cyan);
+      text-decoration: none;
+    }
+
+    .archive-links {
+      font-size: 0.8em;
+      font-family: 'Garamond', serif;
+      color: var(--marian-cyan);
+      line-height: 1.6;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <div class="rosary-container">
-    <img src="rosary.png" alt="Rosary">
-    <img src="logo-vatican.png" alt="Vatican Crest">
+  <div class="rosary-banner">
+    <img src="logo-vatican.png" alt="Vatican Crest" class="crest-left">
+    <img src="rosary.png" alt="Rosary" class="rosary-right">
   </div>
 
   <div class="mysteries">
@@ -78,6 +121,36 @@
       <p>And it came to pass, that, after three days, they found him in the temple, sitting in the midst of the doctors, hearing them, and asking them questions. (Luke 2:46)</p>
     </div>
   </div>
+
+  <section class="rosary-instructions">
+    <h2>🕊️ How to Pray the Rosary</h2>
+
+    <p><strong>Begin with the Sign of the Cross:</strong><br />In the name of the Father, and of the Son, and of the Holy Ghost. Amen.</p>
+
+    <p><strong>While holding the crucifix, pray the Apostles’ Creed:</strong><br />I believe in God, the Father Almighty... life everlasting. Amen.</p>
+
+    <p><strong>Then pray the Our Father:</strong><br />Our Father, which art in heaven... deliver us from evil. Amen.</p>
+
+    <p><strong>Then pray:</strong><br />Three <em>Hail Marys</em> (for Faith, Hope, and Charity), and one <em>Glory Be</em>.</p>
+
+    <p><strong>For each decade:</strong><br />Announce the mystery, pause for reflection, then pray:<br />One <em>Our Father</em>, ten <em>Hail Marys</em>, and one <em>Glory Be</em>.</p>
+
+    <p><strong>After each decade:</strong><br />You may add: “O my Jesus, forgive us our sins...”</p>
+
+    <p><strong>Closing Prayers:</strong><br /><em>Hail, Holy Queen</em>... O sweet Virgin Mary. Amen.</p>
+
+    <p><strong>Optional:</strong> Conclude with the <a href="/litanie-lauretane_en.html">Litany of Loreto</a> or another Marian devotion.</p>
+
+    <div class="archive-links">
+      🔗 <strong>Rosary Archive Resources</strong><br />
+      <a href="https://sf-rocker.github.io/rosary-archive/howtopray">How to Pray the Rosary</a> &nbsp;|&nbsp;
+      <a href="https://sf-rocker.github.io/rosary-archive/joyful/">Joyful Mysteries</a> &nbsp;|&nbsp;
+      <a href="https://sf-rocker.github.io/rosary-archive/sorrowful/">Sorrowful Mysteries</a> &nbsp;|&nbsp;
+      <a href="https://sf-rocker.github.io/rosary-archive/glorious/">Glorious Mysteries</a> &nbsp;|&nbsp;
+      <a href="https://sf-rocker.github.io/rosary-archive/light/">Mysteries of Light</a> &nbsp;|&nbsp;
+      <a href="https://sf-rocker.github.io/">St. Michael Prayer</a>
+    </div>
+  </section>
 
 </body>
 </html>
