@@ -21,16 +21,22 @@
       text-align: center;
     }
 
-.archive-links {
-  max-width: 90%;
-  max-height: 30vh;
-  overflow-y: auto;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 124, 145, 0.2);
-  margin-bottom: 2rem;
+.archive-links a {
+  color: #007c91; /* Marian cyan */
+  background-color: rgba(224, 247, 250, 0.8); /* soft cyan wrap */
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.archive-links a:hover {
+  background-color: #b2ebf2; /* lighter cyan on hover */
+  box-shadow: 0 0 6px rgba(0, 124, 145, 0.4);
+}
+
 
   </style>
 </head>
