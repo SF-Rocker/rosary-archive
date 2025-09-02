@@ -95,6 +95,22 @@
       text-decoration: none;
     }
   </style>
+  <style>
+  .scroll-button {
+    background-color: #003366; /* Marian blue */
+    color: #fff;
+    font-family: 'Gentium Basic', serif;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .scroll-button:hover {
+    background-color: #0055aa;
+  }
+</style>
 </head>
 <body>
 
@@ -107,6 +123,7 @@
     <div class="mystery">
       <h2>First Glorious Mystery: The Resurrection</h2>
       <p>"Why seek you the living with the dead?" (Lk 24:1–5)</p>
+      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -146,7 +163,7 @@
   The communion of saints, the forgiveness of sins,<br />
   The resurrection of the body, and life everlasting. Amen. </p><br />
 
-    <p><strong>Then pray the Our Father:</strong><br />Our Father, which art in heaven, sanctified be thy name.<br />
+    <p id="ourFather"><strong>Then pray the Our Father:</strong><br />Our Father, which art in heaven, sanctified be thy name.<br />
     Let thy kingdom come. Thy will be done, as in heaven, in earth also.<br />
     Give us today our supersubstantial bread, and forgive us our debts, as we also forgive our debtors.<br />
     And lead us not into tentation, but deliver us from evil. Amen.<br /> </p>
@@ -194,5 +211,14 @@
     </div>
   </section>
 
+</body>
+<script>
+  function scrollToOurFather() {
+    const prayer = document.getElementById("ourFather");
+    if (prayer) {
+      prayer.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+</script>
 </body>
 </html>
