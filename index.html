@@ -18,6 +18,16 @@
       text-align: center;
     }
 
+    .directory-box {
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      padding: 30px;
+      background: linear-gradient(to bottom right, #e6f7ff, #d0f0ff);
+      border: 2px solid #007c91;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0, 124, 145, 0.15);
+    }
+
     h1 {
       color: #007c91;
       font-size: 2.5em;
@@ -44,14 +54,22 @@
       box-shadow: 0 0 15px rgba(0,124,145,0.2);
     }
 
+    .schedule-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 25px;
+      background: linear-gradient(to bottom right, #e6f7ff, #d0f0ff);
+      border: 2px solid #007c91;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0, 124, 145, 0.2);
+    }
+
     .rosary-schedule {
-      max-width: 500px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: rgba(0, 124, 145, 0.05); /* soft Marian tint */
+      background-color: rgba(0, 124, 145, 0.05);
       border-left: 6px solid #007c91;
       border-radius: 12px;
       box-shadow: 0 0 12px rgba(0, 124, 145, 0.1);
+      padding: 20px;
       text-align: left;
     }
 
@@ -88,35 +106,39 @@
 </head>
 <body>
   <div class="container">
-    <img src="https://catholicmagazine.news/wp-content/uploads/2022/02/turtledoves-pigeons.jpg" alt="Turtledoves and Pigeons" class="image-banner" />
-    <h1>🕊️ Rosary Archive Directory</h1>
+    <div class="directory-box">
+      <img src="https://catholicmagazine.news/wp-content/uploads/2022/02/turtledoves-pigeons.jpg" alt="Turtledoves and Pigeons" class="image-banner" />
+      <h1>🕊️ Rosary Archive Directory</h1>
 
-    <a href="/howtopray">How to Pray the Rosary</a>
-    <a href="/joyful">Joyful Mysteries</a>
-    <a href="/sorrowful">Sorrowful Mysteries</a>
-    <a href="/glorious">Glorious Mysteries</a>
-    <a href="/light">Mysteries of Light</a>
-    <a href="/litanie-lauretane_en">Litany of Loreto</a>
-    <a href="/holy-queen-prayer">Hail Holy Queen</a>
-    <a href="/St-Michael-Prayer">St. Michael Prayer</a>
+      <a href="/howtopray">How to Pray the Rosary</a>
+      <a href="/joyful">Joyful Mysteries</a>
+      <a href="/sorrowful">Sorrowful Mysteries</a>
+      <a href="/glorious">Glorious Mysteries</a>
+      <a href="/light">Mysteries of Light</a>
+      <a href="/litanie-lauretane_en">Litany of Loreto</a>
+      <a href="/holy-queen-prayer">Hail Holy Queen</a>
+      <a href="/St-Michael-Prayer">St. Michael Prayer</a>
+    </div>
 
-    <section class="rosary-schedule">
-      <h2>📿 Weekly Rosary Mysteries</h2>
-      <ul>
-        <li><strong>Monday</strong> — Joyful Mysteries</li>
-        <li><strong>Tuesday</strong> — Sorrowful Mysteries</li>
-        <li><strong>Wednesday</strong> — Glorious Mysteries</li>
-        <li><strong>Thursday</strong> — Luminous Mysteries</li>
-        <li><strong>Friday</strong> — Sorrowful Mysteries</li>
-        <li><strong>Saturday</strong> — Joyful Mysteries</li>
-        <li><strong>Sunday</strong> — Glorious Mysteries <em>(or seasonal)</em></li>
-      </ul>
-      <p class="note">
-        🌙 On Sundays during Advent and Christmas: <strong>Joyful</strong><br>
-        🔥 During Lent: <strong>Sorrowful</strong><br>
-        <span class="brown-cross">✝️</span> During Easter: <strong>Glorious</strong>
-      </p>
-    </section>
+    <div class="schedule-wrapper">
+      <section class="rosary-schedule">
+        <h2>📿 Weekly Rosary Mysteries</h2>
+        <ul>
+          <li><strong>Monday</strong> — Joyful Mysteries</li>
+          <li><strong>Tuesday</strong> — Sorrowful Mysteries</li>
+          <li><strong>Wednesday</strong> — Glorious Mysteries</li>
+          <li><strong>Thursday</strong> — Luminous Mysteries</li>
+          <li><strong>Friday</strong> — Sorrowful Mysteries</li>
+          <li><strong>Saturday</strong> — Joyful Mysteries</li>
+          <li><strong>Sunday</strong> — Glorious Mysteries <em>(or seasonal)</em></li>
+        </ul>
+        <p class="note">
+          🌙 On Sundays during Advent and Christmas: <strong>Joyful</strong><br>
+          🔥 During Lent: <strong>Sorrowful</strong><br>
+          <span class="brown-cross">✝️</span> During Easter: <strong>Glorious</strong>
+        </p>
+      </section>
+    </div>
   </div>
 </body>
 </html>
