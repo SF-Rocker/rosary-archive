@@ -4,78 +4,103 @@
   <meta charset="UTF-8" />
   <title>Sorrowful Mysteries - The Rosary</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --marian-cyan: #007c91;
-    }
+ <style>
+  :root {
+    --marian-cyan: #007c91;     /* Header and link tone */
+    --rosary-bg: #e0f7fa;       /* Light cyan parchment background */
+    --rosary-text: #003c3c;     /* Deep teal text tone */
+  }
 
-    body {
-      margin: 0;
-      padding: 2rem;
-      font-family: 'EB Garamond', serif;
-      background: url('/light/background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+  body {
+    margin: 0;
+    padding: 2rem;
+    font-family: 'EB Garamond', serif;
+    background: url('/light/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--rosary-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .rosary-banner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
+  .rosary-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
 
-    .crest-left {
-      max-width: 180px;
-      height: auto;
-      flex-shrink: 0;
-    }
+  .crest-left {
+    max-width: 180px;
+    height: auto;
+    flex-shrink: 0;
+  }
 
-    .rosary-right {
-      max-height: 700px;
-      width: auto;
-    }
+  .rosary-right {
+    max-height: 700px;
+    width: auto;
+  }
 
-    .mysteries {
-      max-width: 700px;
-      background-color: #ffffffcc;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,124,145,0.2);
-      line-height: 1.6;
-    }
+  .mysteries {
+    max-width: 700px;
+    background-color: var(--rosary-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,124,145,0.2);
+    line-height: 1.6;
+    color: var(--rosary-text);
+  }
 
-    .mystery h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: var(--marian-cyan);
-    }
+  .mystery h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--marian-cyan);
+  }
 
-    .mystery p {
-      font-size: 1rem;
-      font-style: italic;
-      color: var(--marian-cyan);
-    }
+  .mystery p {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--rosary-text);
+  }
 
-    .archive-links {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      font-family: 'Garamond', serif;
-      color: var(--marian-cyan);
-      line-height: 1.6;
-    }
+  .rosary-instructions {
+    background-color: var(--rosary-bg);
+    padding: 25px;
+    border-radius: 12px;
+    font-family: 'Garamond', 'Georgia', serif;
+    color: var(--rosary-text);
+    box-shadow: 0 0 10px rgba(0,124,145,0.2);
+    text-align: center;
+    margin-top: 3rem;
+    max-width: 800px;
+  }
 
-    .archive-links a {
-      color: var(--marian-cyan);
-      text-decoration: none;
-    }
-  </style>
+  .rosary-instructions h2 {
+    color: var(--marian-cyan);
+  }
+
+  .rosary-instructions a {
+    color: var(--marian-cyan);
+    text-decoration: none;
+  }
+
+  .archive-links {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    font-family: 'Garamond', serif;
+    color: var(--marian-cyan);
+    line-height: 1.6;
+  }
+
+  .archive-links a {
+    color: var(--marian-cyan);
+    text-decoration: none;
+  }
+</style>
+
 </head>
 <body>
 
