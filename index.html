@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Rosary Archive Directory</title>
@@ -12,15 +12,18 @@
       margin: 0;
       padding: 0;
     }
+
     .container {
       padding: 40px;
       text-align: center;
     }
+
     h1 {
       color: #007c91;
       font-size: 2.5em;
       margin-bottom: 20px;
     }
+
     a {
       color: #007c91;
       font-size: 1.25em;
@@ -28,9 +31,11 @@
       display: block;
       margin: 12px 0;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .image-banner {
       max-width: 100%;
       height: auto;
@@ -39,11 +44,46 @@
       box-shadow: 0 0 15px rgba(0,124,145,0.2);
     }
 
-    .brown-cross {
-  color: #8B4513; /* SaddleBrown */
-  font-size: 1.1em;
-}
+    .rosary-schedule {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: rgba(0, 124, 145, 0.05); /* soft Marian tint */
+      border-left: 6px solid #007c91;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 124, 145, 0.1);
+      text-align: left;
+    }
 
+    .rosary-schedule h2 {
+      color: #007c91;
+      font-size: 1.6em;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .rosary-schedule ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .rosary-schedule li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(0, 60, 60, 0.1);
+    }
+
+    .rosary-schedule .note {
+      margin-top: 1.5rem;
+      font-size: 0.9em;
+      color: #003c3c;
+      text-align: center;
+    }
+
+    .brown-cross {
+      color: #8B4513; /* SaddleBrown */
+      font-size: 1.1em;
+    }
   </style>
 </head>
 <body>
@@ -59,23 +99,24 @@
     <a href="/litanie-lauretane_en">Litany of Loreto</a>
     <a href="/holy-queen-prayer">Hail Holy Queen</a>
     <a href="/St-Michael-Prayer">St. Michael Prayer</a>
+
+    <section class="rosary-schedule">
+      <h2>📿 Weekly Rosary Mysteries</h2>
+      <ul>
+        <li><strong>Monday</strong> — Joyful Mysteries</li>
+        <li><strong>Tuesday</strong> — Sorrowful Mysteries</li>
+        <li><strong>Wednesday</strong> — Glorious Mysteries</li>
+        <li><strong>Thursday</strong> — Luminous Mysteries</li>
+        <li><strong>Friday</strong> — Sorrowful Mysteries</li>
+        <li><strong>Saturday</strong> — Joyful Mysteries</li>
+        <li><strong>Sunday</strong> — Glorious Mysteries <em>(or seasonal)</em></li>
+      </ul>
+      <p class="note">
+        🌙 On Sundays during Advent and Christmas: <strong>Joyful</strong><br>
+        🔥 During Lent: <strong>Sorrowful</strong><br>
+        <span class="brown-cross">✝️</span> During Easter: <strong>Glorious</strong>
+      </p>
+    </section>
   </div>
 </body>
 </html>
-<section class="rosary-schedule">
-  <h2>📿 Weekly Rosary Mysteries</h2>
-  <ul>
-    <li><strong>Monday</strong> — Joyful Mysteries</li>
-    <li><strong>Tuesday</strong> — Sorrowful Mysteries</li>
-    <li><strong>Wednesday</strong> — Glorious Mysteries</li>
-    <li><strong>Thursday</strong> — Luminous Mysteries</li>
-    <li><strong>Friday</strong> — Sorrowful Mysteries</li>
-    <li><strong>Saturday</strong> — Joyful Mysteries</li>
-    <li><strong>Sunday</strong> — Glorious Mysteries <em>(or seasonal)</em></li>
-  </ul>
-  <p class="note">
-    🌙 On Sundays during Advent and Christmas: <strong>Joyful</strong><br>
-    🔥 During Lent: <strong>Sorrowful</strong><br>
-    <span class="brown-cross">✝️</span> During Easter: <strong>Glorious</strong>
-  </p>
-</section>
