@@ -112,11 +112,13 @@
   }
 </style>
 <script>
-  document.getElementById("firstMysteryBtn").addEventListener("click", function() {
-    const target = document.getElementById("first-mystery");
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("firstMysteryBtn").addEventListener("click", function() {
+      const target = document.getElementById("first-mystery");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
   });
 </script>
 </head>
