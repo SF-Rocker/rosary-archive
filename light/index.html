@@ -118,6 +118,16 @@
     background-color: #0055aa;
   }
 </style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("firstMysteryBtn").addEventListener("click", function() {
+      const target = document.getElementById("first-mystery");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+</script>
 
 </head>
 <body>
@@ -130,7 +140,7 @@
  <div class="mysteries">
   <div class="mystery">
     <h2>First Mystery of Light: The Baptism in the Jordan</h2>
-    <p>"And Jesus being baptized, forthwith came out of the water: and lo, the heavens were opened to him: and he saw the Spirit of God descending as a dove, and coming upon him." (<i>Mt</i> 3:16)</p>
+    <p id="first-mystery">"And Jesus being baptized, forthwith came out of the water: and lo, the heavens were opened to him: and he saw the Spirit of God descending as a dove, and coming upon him." (<i>Mt</i> 3:16)</p>
     <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
   </div>
 
@@ -196,7 +206,8 @@
 
     <p><strong>After each decade:</strong><br />You may add: “O My Jesus, forgive us our sins,<br />
     save us from the fires of Hell and lead all souls to Heaven,<br />
-    especially those who are in most need of Thy mercy; amen."<br /> </p>
+    especially those who are in most need of Thy mercy; amen."<br />
+    <button id="firstMysteryBtn">Go to First Mystery</button></p>
 
       <p><strong>Closing Prayers:</strong><br /> <em>
     Hail, holy Queen, Mother of Mercy,<br />

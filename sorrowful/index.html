@@ -111,6 +111,16 @@
     background-color: #0055aa;
   }
 </style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("firstMysteryBtn").addEventListener("click", function() {
+      const target = document.getElementById("first-mystery");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+</script>
 </head>
 <body>
 
@@ -122,7 +132,7 @@
   <div class="mysteries">
     <div class="mystery">
       <h2>First Sorrowful Mystery: The Agony in the Garden</h2>
-      <p>"Then Jesus cometh with them into a village called Gethsemani,<br />
+      <p id="first-mystery">"Then Jesus cometh with them into a village called Gethsemani,<br />
       and he said to his disciples: Sit you here till i go yonder,<br />
       and pray. And taking to him Peter and the two sons of Zebedee,<br />
       he began to wax sorrowful and to be sad. Then he saith to them:<br />
@@ -238,7 +248,8 @@
 
         <p><strong>After each decade:</strong><br />You may add: “O My Jesus, forgive us our sins,<br />
     save us from the fires of Hell and lead all souls to Heaven,<br />
-    especially those who are in most need of Thy mercy; amen."<br /> </p>
+    especially those who are in most need of Thy mercy; amen."<br />
+    <button id="firstMysteryBtn">Go to First Mystery</button> </p>
 
       <p><strong>Closing Prayers:</strong><br /> <em>
     Hail, holy Queen, Mother of Mercy,<br />

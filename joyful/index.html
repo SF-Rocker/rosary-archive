@@ -114,6 +114,16 @@
     background-color: #0055aa;
   }
 </style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("firstMysteryBtn").addEventListener("click", function() {
+      const target = document.getElementById("first-mystery");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+</script>
 </head>
 <body>
 
@@ -125,7 +135,7 @@
   <div class="mysteries">
     <div class="mystery">
       <h2>First Joyful Mystery: The Annunciation</h2>
-      <p>And in the sixth month,<br />
+      <p id="first-mystery">And in the sixth month,<br />
       the angel Gabriel was sent<br />
       of God into a city of Galilee,<br />
       called Nazareth,<br />
@@ -250,7 +260,8 @@
 
     <p><strong>After each decade:</strong><br />You may add: “O My Jesus, forgive us our sins,<br />
     save us from the fires of Hell and lead all souls to Heaven,<br />
-    especially those who are in most need of Thy mercy."<br /> </p>
+    especially those who are in most need of Thy mercy; amen."<br />
+    <button id="firstMysteryBtn">Go to First Mystery</button> </p>
 
     <p><strong>Closing Prayers:</strong><br /> <em>
     Hail, holy Queen, Mother of Mercy,<br />
