@@ -111,6 +111,14 @@
     background-color: #0055aa;
   }
 </style>
+<script>
+  document.getElementById("firstMysteryBtn").addEventListener("click", function() {
+    const target = document.getElementById("first-mystery");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+</script>
 </head>
 <body>
 
@@ -122,7 +130,7 @@
   <div class="mysteries">
     <div class="mystery">
       <h2>First Glorious Mystery: The Resurrection</h2>
-      <p>"And in the first of the sabbath<br />
+      <p id="first-mystery">"And in the first of the sabbath<br />
       very early they came to the monument,<br />
       carrying the spices which they had prepared:<br />
       and they found the stone rolled back from the monument.<br />
@@ -214,7 +222,9 @@
 
         <p><strong>After each decade:</strong><br />You may add: “O My Jesus, forgive us our sins,<br />
     save us from the fires of Hell and lead all souls to Heaven,<br />
-    especially those who are in most need of Thy mercy; amen."<br /> </p>
+    especially those who are in most need of Thy mercy; amen."<br />
+<button id="firstMysteryBtn">Go to First Mystery</button>
+</p>
 
       <p><strong>Closing Prayers:</strong><br /> <em>
     Hail, holy Queen, Mother of Mercy,<br />
@@ -268,4 +278,23 @@
     }
   }
 </script>
+<style>
+  #firstMysteryBtn {
+    background-color: #003366; /* Marian Blue */
+    color: #ffff66; /* Yellow stars */
+    border: 2px solid #ffff66;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+  }
+
+  #firstMysteryBtn:hover {
+    transform: scale(1.05);
+    background-color: #002244;
+  }
+</style>
 </html>
