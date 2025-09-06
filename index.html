@@ -46,14 +46,6 @@
       text-decoration: underline;
     }
 
-    .image-banner {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,124,145,0.2);
-    }
-
     .schedule-wrapper {
       max-width: 600px;
       margin: 0 auto;
@@ -97,67 +89,11 @@
       color: #003c3c;
       text-align: center;
     }
-
-    .brown-cross {
-      color: #8B4513; /* SaddleBrown */
-      font-size: 1.1em;
-    }
-
-    .image-banner::after {
-  content: "Geno＋";
-  position: absolute;
-  bottom: 12px;
-  right: 16px;
-  font-size: 1.2em;
-  color: rgba(0, 60, 60, 0.3);
-  font-family: 'Garamond', serif;
-}
-
-
-.image-banner {
-  width: 100%;
-  height: 320px; /* Slightly taller to preserve heads */
-  object-fit: contain;
-  object-position: center 10%; /* Nudges the crop upward gently */
-  margin-bottom: 30px;
-  border-radius: 12px;
-  box-shadow: none;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
-}
-
-body.loaded .image-banner {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.fade-cross {
-  font-size: 1.8em;
-  color: #8B4513; /* SaddleBrown */
-  opacity: 0;
-  transform: translateY(20px);
-  text-shadow: 0 0 6px rgba(139, 69, 19, 0.3); /* soft SaddleBrown glow */
-  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-body.loaded .fade-cross {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-
-
   </style>
 </head>
 <body>
   <div class="container">
     <div class="directory-box">
-      <img src="/turtledove-pigeons.png" alt="Turtledoves and Pigeons" class="image-banner" />
-      <div class="fade-cross">✝️</div>
       <h1>🕊️ Rosary Archive Directory</h1>
 
       <a href="/howtopray">How to Pray the Rosary</a>
@@ -185,15 +121,10 @@ body.loaded .fade-cross {
         <p class="note">
           🌙 On Sundays during Advent and Christmas: <strong>Joyful</strong><br>
           🔥 During Lent: <strong>Sorrowful</strong><br>
-          <span class="brown-cross">&#10013;</span> During Easter: <strong>Glorious</strong>
+          During Easter: <strong>Glorious</strong>
         </p>
       </section>
     </div>
   </div>
-<script>
-  window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
-  });
-</script>
 </body>
 </html>
