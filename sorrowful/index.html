@@ -131,6 +131,15 @@
   });
 </script>
 </head>
+<script>
+  function scrollWithOffset(targetId, offset = -80) {
+    const element = document.getElementById(targetId);
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }
+</script>
 <body>
 
   <div class="rosary-banner">
@@ -148,7 +157,7 @@
       My soul is sorrowful even unto death: stay here, and watch with me.<br />
       And being gone forward a little, he fell upon his face, praying,<br />
       let this chalice pass from me: nevertheless not as I will, but as thou." <br /> (Mt 26:36–39)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -156,7 +165,7 @@
       <p>"Then he released to them Barabbas,<br />
       and having scourged Jesus,<br />
       delivered him unto them for to be crucified."<br /> (Mt 27:26)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -171,7 +180,7 @@
       And bowing the knee before him,<br />
       they mocked him, saying:<br />
       Hail king of the Jews."<br /> (Mt 27:27–29)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -183,7 +192,7 @@
       And they bring him into the place Golgotha:<br />
       which being interpreted is:<br />
       The place of Calvary." <br /> (Mk 15:21–22)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -217,7 +226,7 @@
       And Jesus crying with a loud voice said:<br />
       Father, into thy hands I commend my spirit.<br />
       And saying this, he gave up the ghost."<br /> (Lk 23:33–46)</p>
-    <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
   </div>
 
 <section class="rosary-instructions">

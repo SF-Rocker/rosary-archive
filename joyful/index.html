@@ -135,6 +135,15 @@
   });
 </script>
 </head>
+<script>
+  function scrollWithOffset(targetId, offset = -80) {
+    const element = document.getElementById(targetId);
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }
+</script>
 <body>
 
   <div class="rosary-banner">
@@ -153,7 +162,7 @@
       to a man whose name was Joseph,<br />
       of the house of David;<br />
       and the virgin’s name was Mary.<br /> (Luke 1:26-27)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -169,7 +178,7 @@
       and she cried out with a loud voice, and said:<br />
       Blessed art though among women,<br />
       and blessed is the fruit of thy womb.<br /> (Luke 1:39–42)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -199,7 +208,7 @@
       and swaddled him in clothes,<br />
       and laid him down in a manger:<br />
       because there was not place for them in the inn. <br /> (Luke 2:1-7)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -217,7 +226,7 @@
       and to give a sacrifice according<br />
       as it is written in the law of our Lord,<br />
       a pair of turtles or two young pigeons.<br /> (Luke 2:21-24)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -229,7 +238,7 @@
       the child Jesus remained in Jerusalem, seeking him. And it came to pass,<br />
       after three days they found him in the temple sitting in the midst of the doctors,<br />
       hearing them, and asking them. And all were astonied that heard him upon his wisdom and answers.<br />  (Luke 2:41-47)</p>
-     <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+     <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
   </div>
 
   <section class="rosary-instructions">

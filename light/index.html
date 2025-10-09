@@ -139,6 +139,15 @@
 </script>
 
 </head>
+<script>
+  function scrollWithOffset(targetId, offset = -80) {
+    const element = document.getElementById(targetId);
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }
+</script>
 <body>
 
   <div class="rosary-banner">
@@ -155,31 +164,31 @@
     and he saw the Spirit of God descending as a dove, <br />
     and coming upon him. And behold a voice from heaven saying: <br />
     This is my beloved son, in whom I am well pleased." (<i>Mt</i> 3:16-17)</p> <br />
-    <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
   </div>
 
   <div class="mystery">
     <h2>Second Mystery of Light: The Wedding at Cana</h2>
     <p>"And the third day there was a marriage made in Cana of Galilee, and the mother of Jesus was there And Jesus also was called, his disciples, to the marriage. And the wine failing, the mother of Jesus saith to him: They have no wine. And Jesus saith to her: What is to me and thee, woman? my hour cometh not yet. His mother saith to the ministers: Whatsoever he shall say to you, do ye." (<i>Jn</i> 2:1–5)</p>
-    <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
   </div>
 
   <div class="mystery">
     <h2>Third Mystery of Light: The Proclamation of the Kingdom</h2>
     <p>"and saying: That the time is fulfilled, and the kingdom of God is at hand: be penitent, and believe in the Gospel." (<i>Mk</i> 1:15)</p>
-    <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
   </div>
 
   <div class="mystery">
     <h2>Fourth Mystery of Light: The Transfiguration</h2>
     <p>"And after six days Jesus taketh unto him Peter, and James, and John his brother, and bringeth them into a high mountain apart: And he was transfigured before them. And his face did shine as the sun: and his garments became white as snow." (<i>Mt</i> 17:1-2)</p>
-    <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
   </div>
 
   <div class="mystery">
     <h2>Fifth Mystery of Light: The Institution of the Eucharist</h2>
     <p>"And whiles they were at supper, Jesus took bread, and blessed, and brake: and he gave to his disciples, and said: Take ye, and eat: THIS IS MY BODY." (<i>Mt</i> 26:26)</p>
-    <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
   </div>
 </div>
 
