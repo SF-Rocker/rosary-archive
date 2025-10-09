@@ -132,6 +132,15 @@
   });
 </script>
 </head>
+<script>
+  function scrollWithOffset(targetId, offset = -80) {
+    const element = document.getElementById(targetId);
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }
+</script>
 <body>
 
   <div class="rosary-banner">
@@ -152,13 +161,13 @@
       And when they feared,<br />
       and cast down their countenance toward the ground,<br />
       they said unto them:Why seek you the living with the dead?" <br /> (Lk 24:1–5)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
       <h2>Second Glorious Mystery: The Ascension</h2>
       <p>"And so our Lord Jesus after he spake unto them, was assumpted* into heaven, and sat on the right hand of God." (Mk 16:19)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -173,7 +182,7 @@
       And they were all replenished with the Holy Ghost, <br />
       and they began to speak with diverse tongues, <br />
       according as the Holy Ghost gave them to speak."  <br /> (Acts 2:1–4)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -184,7 +193,7 @@
       Because he that is mighty <br />
       hath done great things to me: <br />
       And holy is his name."  <br /> (Lk 1:48–49)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')"">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery">
@@ -193,7 +202,7 @@
       A woman clothed with the <br />
       sun and the moon under her feet, <br />
       and on her head a crown of twelve stars." <br />  (Apoc 12:1)</p>
-      <button class="scroll-button" onclick="scrollToOurFather()">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')"">🕊️ Proceed to Our Father</button>
     </div>
   </div>
 
@@ -219,6 +228,7 @@
     And lead us not into tentation, but deliver us from evil. Amen.<br /> </p>
 
     <p><strong>Then pray:</strong><br />Three <em>Hail Marys</em> (for Faith, Hope, and Charity), and one <em>Glory Be</em>.</p>
+    <button class="scroll-button" onclick="scrollWithOffset('first-mystery')">🕊️ Go to First Mystery</button>
 
     <p><strong>Hail Mary Prayer:</strong><br /> <em> Hail Mary full of grace, <br />
     the Lord is with Thee, <br />
@@ -234,9 +244,8 @@
 
         <p><strong>After each decade:</strong><br />You may add: “O My Jesus, forgive us our sins,<br />
     save us from the fires of Hell and lead all souls to Heaven,<br />
-    especially those who are in most need of Thy mercy; amen."<br />
-<button id="firstMysteryBtn">Go to First Mystery</button>
-</p>
+    especially those who are in most need of Thy mercy; amen."<br /> </p>
+<button class="scroll-button" onclick="scrollWithOffset('first-mystery')">🕊️ Go to First Mystery</button>
 
       <p><strong>Closing Prayers:</strong><br /> <em>
     Hail, holy Queen, Mother of Mercy,<br />
