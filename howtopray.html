@@ -32,6 +32,7 @@
       margin-bottom: 30px;
     }
 
+    /* Balanced doves for main title */
     h1::before, h1::after {
       content: "🕊️";
       margin: 0 10px;
@@ -55,28 +56,39 @@
     }
 
     .marian-text {
-      color: var(--marian-cyan); /* Marian blue */
+      color: var(--marian-cyan);
       font-weight: bold;
     }
 
-    /* Center h1, h2, h3 inside the container */
-.centered h1,
-.section-block h2,
-.section-block h3 {
-  text-align: center;
-}
+    /* Section containers */
+    .section-block {
+      background-color: #f0fcff;
+      border: 2px solid #cceef5;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 8px rgba(0,124,145,0.1);
+    }
 
-/* Keep paragraph text left for readability */
-.section-block p {
-  text-align: left;
-}
+    /* Center headers; keep paragraph text left */
+    .centered h1,
+    .section-block h2,
+    .section-block h3 {
+      text-align: center;
+    }
+    .section-block p {
+      text-align: left;
+    }
 
-.centered {
-  max-width: 800px;
-  margin: 0 auto;   /* centers the block */
-  padding: 40px;
-}
-
+    /* Balanced doves for section headers (remove inline emojis in text) */
+    .section-block h2::before,
+    .section-block h2::after,
+    .section-block h3::before,
+    .section-block h3::after {
+      content: "🕊️";
+      color: var(--marian-cyan);
+      margin: 0 8px;
+    }
   </style>
 </head>
 <body>
@@ -84,12 +96,12 @@
     <h1>How to Pray the Rosary</h1>
 
     <div class="section-block">
-      <h2 class="marian-text">🕊️ Begin with the Sign of the Cross</h2>
+      <h2 class="marian-text">Begin with the Sign of the Cross</h2>
       <p class="marian-text">In the name of the Father, and of the Son, and of the Holy Ghost. Amen.</p>
     </div>
 
     <div class="section-block">
-      <h2 class="marian-text">🕊️ Apostles’ Creed</h2>
+      <h2 class="marian-text">Apostles’ Creed</h2>
       <p class="marian-text">
         I believe in God, the Father almighty, Creator of heaven and earth,<br />
         and in Jesus Christ, his only Son, our Lord,<br />
@@ -105,7 +117,7 @@
     </div>
 
     <div class="section-block">
-      <h2 class="marian-text">🕊️ Our Father</h2>
+      <h2 class="marian-text">Our Father</h2>
       <p class="marian-text">
         Our Father, which art in heaven, sanctified be thy name.<br />
         Let thy kingdom come. Thy will be done, as in heaven, so on earth.<br />
@@ -115,14 +127,14 @@
     </div>
 
     <div class="section-block">
-      <h2 class="marian-text">🕊️ Opening Prayers</h2>
+      <h2 class="marian-text">Opening Prayers</h2>
       <p class="marian-text">
         Three <em>Hail Marys</em> (for Faith, Hope, and Charity), and one <em>Glory Be</em>.
       </p>
     </div>
 
     <div class="section-block">
-      <h2 class="marian-text">🕊️ For Each Decade</h2>
+      <h2 class="marian-text">For Each Decade</h2>
       <p class="marian-text">
         Announce the mystery, pause for reflection, then pray:<br />
         One <em>Our Father</em>, ten <em>Hail Marys</em>, and one <em>Glory Be</em>.
@@ -130,7 +142,7 @@
     </div>
 
     <div class="section-block">
-      <h2 class="marian-text">🕊️ After Each Decade</h2>
+      <h2 class="marian-text">After Each Decade</h2>
       <p class="marian-text">
         You may add: “O my Jesus, forgive us our sins, save us from the fires of hell,<br />
         lead all souls to heaven, especially those in most need of Thy mercy.”
@@ -138,7 +150,7 @@
     </div>
 
     <div class="section-block">
-      <h2 class="marian-text">🕊️ Closing Prayers</h2>
+      <h2 class="marian-text">Closing Prayers</h2>
       <p class="marian-text">
         <em>Hail, Holy Queen</em>:<br />
         Mother of mercy; hail, our life, our sweetness and our hope.<br />
@@ -151,14 +163,14 @@
     </div>
 
     <div class="section-block">
-      <h3 class="marian-text">🕊️ Optional Devotions</h3>
+      <h3 class="marian-text">Optional Devotions</h3>
       <p class="marian-text">
         Conclude with the <a href="litanie-lauretane_en.html">Litany of Loreto</a> or another Marian devotion.
       </p>
     </div>
 
     <div class="section-block">
-      <h3 class="marian-text">🕊️ Explore the Mysteries</h3>
+      <h3 class="marian-text">Explore the Mysteries</h3>
       <p class="marian-text">
         <a href="/joyful">Joyful Mysteries</a><br />
         <a href="/sorrowful">Sorrowful Mysteries</a><br />
@@ -168,18 +180,7 @@
     </div>
 
     <div class="section-block">
-      <h3 class="marian-text">🕊️ Learn the Prayers</h3>
-      <p class="marian-text">
-        <a href="/hail-mary-prayer">Hail Mary Prayer</a><br />
-        <a href="/glorybe">Glory Be Prayer</a><br />
-        <a href="/fatima">Fatima Prayer</a><br />
-        <a href="/holy-queen-prayer">Hail Holy Queen</a><br />
-        <a href="litanie-lauretane_en">Litany of Loreto</a>
-      </p>
-    </div>
-
-    <div class="section-block">
-      <h3 class="marian-text">🕊️ Rosary Directory</h3>
+      <h3 class="marian-text">Rosary Directory</h3>
       <p><a href="/">Rosary Archive</a></p>
     </div>
   </div>
