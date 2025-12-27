@@ -5,121 +5,38 @@
   <title>Sorrowful Mysteries - The Rosary</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --marian-cyan: #007c91;
-    }
-
+    :root { --marian-cyan: #007c91; }
     body {
-      margin: 0;
-      padding: 2rem;
-      font-family: 'EB Garamond', serif;
+      margin: 0; padding: 2rem; font-family: 'EB Garamond', serif;
       background: url('/sorrowful/background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      background-size: cover; color: #333; display: flex;
+      flex-direction: column; align-items: center; text-align: center;
     }
-
-    .rosary-banner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .crest-left {
-      max-width: 180px;
-      height: auto;
-      flex-shrink: 0;
-    }
-
-    .rosary-right {
-      max-height: 700px;
-      width: auto;
-    }
-
+    .rosary-banner { display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+    .crest-left { max-width: 180px; height: auto; }
+    .rosary-right { max-height: 700px; width: auto; }
     .mysteries {
-      max-width: 700px;
-      background-color: #e0f7fa;
-      padding: 25px;
-      border-radius: 12px;
-      font-family: 'Garamond', 'Georgia', serif;
-      color: #003c3c;
-      box-shadow: 0 0 10px rgba(0,124,145,0.2);
-      text-align: center;
-      margin-top: 2rem;
+      max-width: 700px; background-color: #e0f7fa; padding: 25px; border-radius: 12px;
+      color: #003c3c; box-shadow: 0 0 10px rgba(0,124,145,0.2); margin-top: 2rem;
     }
-
-    .mystery {
-      padding-top: 20px;
-      margin-bottom: 40px;
-    }
-
-    .mystery h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: var(--marian-cyan);
-    }
-
-    .mystery p {
-      font-size: 1rem;
-      font-style: italic;
-      color: var(--marian-cyan);
-    }
-
+    .mystery { margin-bottom: 3rem; }
+    .mystery h2 { font-size: 1.5rem; color: var(--marian-cyan); }
+    .mystery p { font-size: 1rem; font-style: italic; color: var(--marian-cyan); }
     .rosary-instructions {
-      background-color: #e0f7fa;
-      padding: 25px;
-      border-radius: 12px;
-      font-family: 'Garamond', 'Georgia', serif;
-      color: #003c3c;
-      box-shadow: 0 0 10px rgba(0,124,145,0.2);
-      text-align: center;
-      margin-top: 3rem;
-      max-width: 800px;
+      background-color: #e0f7fa; padding: 25px; border-radius: 12px;
+      color: #003c3c; box-shadow: 0 0 10px rgba(0,124,145,0.2); margin-top: 3rem; max-width: 800px;
     }
-
-    .rosary-instructions h2 {
-      color: var(--marian-cyan);
-    }
-
     .scroll-button {
-      background-color: #003366; /* Marian blue */
-      color: #fff;
-      font-family: 'EB Garamond', serif;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      margin: 5px;
+      background-color: #003366; color: #fff; border: none; padding: 8px 12px;
+      border-radius: 6px; cursor: pointer; transition: background-color 0.3s ease; margin: 5px;
     }
-
-    .scroll-button:hover {
-      background-color: #0055aa;
-    }
-
-    .marian-text {
-      color: var(--marian-cyan);
-    }
-
-    .archive-links {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      line-height: 1.6;
-    }
-
-    .archive-links a {
-      color: var(--marian-cyan);
-      text-decoration: none;
-    }
+    .scroll-button:hover { background-color: #0055aa; }
+    .marian-text { color: var(--marian-cyan); }
+    .archive-links { margin-top: 2rem; font-size: 0.9rem; line-height: 1.6; }
+    .archive-links a { color: var(--marian-cyan); text-decoration: none; }
   </style>
   <script>
-    function scrollWithOffset(targetId, offset = -40) {
+    function scrollWithOffset(targetId, offset = -80) {
       const element = document.getElementById(targetId);
       if (element) {
         const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
@@ -138,54 +55,98 @@
   <div class="mysteries">
     <div class="mystery" id="first-mystery">
       <h2>First Sorrowful Mystery: The Agony in the Garden</h2>
-      <p>"Then Jesus cometh with them into a village called Gethsemani..." (Mt 26:36–39)</p>
+      <p>"Then Jesus cometh with them into a village called Gethsemani,<br />
+      and he said to his disciples: Sit you here till i go yonder,<br />
+      and pray. And taking to him Peter and the two sons of Zebedee,<br />
+      he began to wax sorrowful and to be sad. Then he saith to them:<br />
+      My soul is sorrowful even unto death: stay here, and watch with me.<br />
+      And being gone forward a little, he fell upon his face, praying,<br />
+      let this chalice pass from me: nevertheless not as I will, but as thou." <br /> (Mt 26:36–39)</p>
       <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery" id="second-mystery">
       <h2>Second Sorrowful Mystery: The Scourging at the Pillar</h2>
-      <p>"Then he released to them Barabbas, and having scourged Jesus..." (Mt 27:26)</p>
+      <p>"Then he released to them Barabbas,<br />
+      and having scourged Jesus,<br />
+      delivered him unto them for to be crucified."<br /> (Mt 27:26)</p>
       <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery" id="third-mystery">
       <h2>Third Sorrowful Mystery: The Crowning with Thorns</h2>
-      <p>"Then the president's soldiers... platting a crown of thorns..." (Mt 27:27–29)</p>
+      <p>"Then the president's soldiers taking Jesus into the palace,<br />
+      gathered together unto him the whole band.<br />
+      and stripping him,<br />
+      put a scarlet cloak about him,<br />
+      and platting a crown of thorns,<br />
+      put it upon his head,<br />
+      and a reed in his right hand.<br />
+      And bowing the knee before him,<br />
+      they mocked him, saying:<br />
+      Hail king of the Jews."<br /> (Mt 27:27–29)</p>
       <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery" id="fourth-mystery">
       <h2>Fourth Sorrowful Mystery: The Carrying of the Cross</h2>
-      <p>"And they forced a certain man... to take up his cross." (Mk 15:21–22)</p>
+      <p>"And they forced a certain man that passed by,<br />
+      Simon a Cyrenean coming from the country,<br />
+      the father of Alexander and Rufus,<br />
+      to take up his cross.<br />
+      And they bring him into the place Golgotha:<br />
+      which being interpreted is:<br />
+      The place of Calvary." <br /> (Mk 15:21–22)</p>
       <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
     <div class="mystery" id="fifth-mystery">
       <h2>Fifth Sorrowful Mystery: The Crucifixion</h2>
-      <p>"And Jesus crying with a loud voice said: Father, into thy hands I commend my spirit." (Lk 23:33–46)</p>
+      <p>"And after they came to the place which is called Calvary,<br />
+      there they crucified him: and the thieves, one on the right hand,<br />
+      and the other on the left. And Jesus said: Father, forgive them:<br />
+      for they know not what they do. But they dividing his garments, did cast lots.<br />
+      And the people stood expecting, and the princes with them derided him, saying:<br />
+      Others he hath saved , let him save himself, if this be Christ, the elect of God.<br />
+      And the soldiers also mocked him coming to him,<br />
+      and offering him vinegar, saying:<br />
+      If thou be the king of the Jews,<br />
+      save thyself,<br />
+      And there was also a supersciption written over him<br />
+      in Greek, and Latin, and Hebrew letters:<br />
+      This is the king of the Jews.<br />
+      And one of those thieves that were hanged, blasphemed him, saying:<br />
+      If thou be Christ, save thyself and us. But the other answering,<br />
+      rebuked him, saying: Neither doest thou fear God,<br />
+      whereas thou art in the same damnation. And we indeed justly,<br />
+      for we receive worthy of our doings:<br />
+      but this man hath done no evil.<br />
+      And he said to Jesus: Lord,<br />
+      remember me when thou shalt come into thy kingdom.<br />
+      And Jesus said to him: Amen I say to thee:<br />
+      This day thou shalt be with me in paradise.<br />
+      And it was almost the sixth hour,<br />
+      and there was made darkness upon the whole earth until the ninth hour.<br />
+      And the sun was darkened and the veil of the temple was rent in the midst.<br />
+      And Jesus crying with a loud voice said:<br />
+      Father, into thy hands I commend my spirit.<br />
+      And saying this, he gave up the ghost."<br /> (Lk 23:33–46)</p>
       <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
   </div>
 
   <section class="rosary-instructions">
-    <h2>🕊️ How to Pray the Rosary</h2>
+    <h2 id="how-to-pray">🕊️ How to Pray the Rosary</h2>
 
-    <p class="marian-text"><strong>Begin with the Sign of the Cross:</strong><br>In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
+    <p class="marian-text"><strong>Our Father...</strong><br />
+    <span id="ourFather">Our Father, which art in heaven, sanctified be thy name... Give us today our supersubstantial bread... Amen.</span></p>
 
-    <p id="ourFather" class="marian-text"><strong>Our Father...</strong><br>Give us today our supersubstantial bread... Amen.</p>
-
-    <div class="mystery-nav">
+    <div class="nav-buttons">
       <button class="scroll-button" onclick="scrollWithOffset('first-mystery')">✝ Go to First Mystery</button>
       <button class="scroll-button" onclick="scrollWithOffset('second-mystery')">✝ Go to Second Mystery</button>
       <button class="scroll-button" onclick="scrollWithOffset('third-mystery')">✝ Go to Third Mystery</button>
       <button class="scroll-button" onclick="scrollWithOffset('fourth-mystery')">✝ Go to Fourth Mystery</button>
       <button class="scroll-button" onclick="scrollWithOffset('fifth-mystery')">✝ Go to Fifth Mystery</button>
-    </div>
-
-    <p class="marian-text"><strong>Hail Mary Prayer:</strong><br><em>Hail Mary full of grace... blessed art thou among women... amen.</em></p>
-
-    <div class="archive-links">
-      <a href="http://www.rosary-archive.org/">Rosary Archive Home</a>
     </div>
   </section>
 
