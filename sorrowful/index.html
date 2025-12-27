@@ -42,17 +42,22 @@
       width: auto;
     }
 
-     .mysteries {
-  max-width: 700px;
-  background-color: #e0f7fa;
-  padding: 25px;
-  border-radius: 12px;
-  font-family: 'Garamond', 'Georgia', serif;
-  color: #003c3c;
-  box-shadow: 0 0 10px rgba(0,124,145,0.2);
-  text-align: center;
-  margin-top: 2rem;
-}
+    .mysteries {
+      max-width: 700px;
+      background-color: #e0f7fa;
+      padding: 25px;
+      border-radius: 12px;
+      font-family: 'Garamond', 'Georgia', serif;
+      color: #003c3c;
+      box-shadow: 0 0 10px rgba(0,124,145,0.2);
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .mystery {
+      padding-top: 20px;
+      margin-bottom: 40px;
+    }
 
     .mystery h2 {
       font-size: 1.5rem;
@@ -82,11 +87,29 @@
       color: var(--marian-cyan);
     }
 
+    .scroll-button {
+      background-color: #003366; /* Marian blue */
+      color: #fff;
+      font-family: 'EB Garamond', serif;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 5px;
+    }
+
+    .scroll-button:hover {
+      background-color: #0055aa;
+    }
+
+    .marian-text {
+      color: var(--marian-cyan);
+    }
+
     .archive-links {
       margin-top: 2rem;
       font-size: 0.9rem;
-      font-family: 'Garamond', serif;
-      color: var(--marian-cyan);
       line-height: 1.6;
     }
 
@@ -95,55 +118,16 @@
       text-decoration: none;
     }
   </style>
-    <style>
-  .scroll-button {
-    background-color: #003366; /* Marian blue */
-    color: #fff;
-    font-family: 'Gentium Basic', serif;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .scroll-button:hover {
-    background-color: #0055aa;
-  }
-
-  a:link,
-  a:visited,
-  a:hover,
-  a:active {
-  color: var(--marian-cyan) !important;
-  text-decoration: none;
-}
-
-    .marian-text {
-      color: var(--marian-cyan);
-        }
-
-</style>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("firstMysteryBtn").addEventListener("click", function() {
-      const target = document.getElementById("first-mystery");
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
+  <script>
+    function scrollWithOffset(targetId, offset = -40) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
       }
-    });
-  });
-</script>
-</head>
-<script>
-  function scrollWithOffset(targetId, offset = -80) {
-    const element = document.getElementById(targetId);
-    if (element) {
-      const y = element.getBoundingClientRect().top + window.pageYOffset + offset;
-      window.scrollTo({ top: y, behavior: "smooth" });
     }
-  }
-</script>
+  </script>
+</head>
 <body>
 
   <div class="rosary-banner">
@@ -152,202 +136,58 @@
   </div>
 
   <div class="mysteries">
-    <div class="mystery">
+    <div class="mystery" id="first-mystery">
       <h2>First Sorrowful Mystery: The Agony in the Garden</h2>
-      <p id="first-mystery">"Then Jesus cometh with them into a village called Gethsemani,<br />
-      and he said to his disciples: Sit you here till i go yonder,<br />
-      and pray. And taking to him Peter and the two sons of Zebedee,<br />
-      he began to wax sorrowful and to be sad. Then he saith to them:<br />
-      My soul is sorrowful even unto death: stay here, and watch with me.<br />
-      And being gone forward a little, he fell upon his face, praying,<br />
-      let this chalice pass from me: nevertheless not as I will, but as thou." <br /> (Mt 26:36–39)</p>
+      <p>"Then Jesus cometh with them into a village called Gethsemani..." (Mt 26:36–39)</p>
       <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
-    <div class="mystery">
+    <div class="mystery" id="second-mystery">
       <h2>Second Sorrowful Mystery: The Scourging at the Pillar</h2>
-      <p>"Then he released to them Barabbas,<br />
-      and having scourged Jesus,<br />
-      delivered him unto them for to be crucified."<br /> (Mt 27:26)</p>
+      <p>"Then he released to them Barabbas, and having scourged Jesus..." (Mt 27:26)</p>
       <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
-    <div class="mystery">
+    <div class="mystery" id="third-mystery">
       <h2>Third Sorrowful Mystery: The Crowning with Thorns</h2>
-      <p>"Then the president's soldiers taking Jesus into the palace,<br />
-      gathered together unto him the whole band.<br />
-      and stripping him,<br />
-      put a scarlet cloak about him,<br />
-      and platting a crown of thorns,<br />
-      put it upon his head,<br />
-      and a reed in his right hand.<br />
-      And bowing the knee before him,<br />
-      they mocked him, saying:<br />
-      Hail king of the Jews."<br /> (Mt 27:27–29)</p>
+      <p>"Then the president's soldiers... platting a crown of thorns..." (Mt 27:27–29)</p>
       <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
-    <div class="mystery">
+    <div class="mystery" id="fourth-mystery">
       <h2>Fourth Sorrowful Mystery: The Carrying of the Cross</h2>
-      <p>"And they forced a certain man that passed by,<br />
-      Simon a Cyrenean coming from the country,<br />
-      the father of Alexander and Rufus,<br />
-      to take up his cross.<br />
-      And they bring him into the place Golgotha:<br />
-      which being interpreted is:<br />
-      The place of Calvary." <br /> (Mk 15:21–22)</p>
+      <p>"And they forced a certain man... to take up his cross." (Mk 15:21–22)</p>
       <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
     </div>
 
-    <div class="mystery">
+    <div class="mystery" id="fifth-mystery">
       <h2>Fifth Sorrowful Mystery: The Crucifixion</h2>
-      <p>"And after they came to the place which is called Calvary,<br />
-      there they crucified him: and the thieves, one on the right hand,<br />
-      and the other on the left. And Jesus said: Father, forgive them:<br />
-      for they know not what they do. But they dividing his garments, did cast lots.<br />
-      And the people stood expecting, and the princes with them derided him, saying:<br />
-      Others he hath saved , let him save himself, if this be Christ, the elect of God.<br />
-      And the soldiers also mocked him coming to him,<br />
-      and offering him vinegar, saying:<br />
-      If thou be the king of the Jews,<br />
-      save thyself,<br />
-      And there was also a supersciption written over him<br />
-      in Greek, and Latin, and Hebrew letters:<br />
-      This is the king of the Jews.<br />
-      And one of those thieves that were hanged, blasphemed him, saying:<br />
-      If thou be Christ, save thyself and us. But the other answering,<br />
-      rebuked him, saying: Neither doest thou fear God,<br />
-      whereas thou art in the same damnation. And we indeed justly,<br />
-      for we receive worthy of our doings:<br />
-      but this man hath done no evil.<br />
-      And he said to Jesus: Lord,<br />
-      remember me when thou shalt come into thy kingdom.<br />
-      And Jesus said to him: Amen I say to thee:<br />
-      This day thou shalt be with me in paradise.<br />
-      And it was almost the sixth hour,<br />
-      and there was made darkness upon the whole earth until the ninth hour.<br />
-      And the sun was darkened and the veil of the temple was rent in the midst.<br />
-      And Jesus crying with a loud voice said:<br />
-      Father, into thy hands I commend my spirit.<br />
-      And saying this, he gave up the ghost."<br /> (Lk 23:33–46)</p>
-    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
+      <p>"And Jesus crying with a loud voice said: Father, into thy hands I commend my spirit." (Lk 23:33–46)</p>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
+    </div>
   </div>
 
-<section class="rosary-instructions">
+  <section class="rosary-instructions">
     <h2>🕊️ How to Pray the Rosary</h2>
 
-    <p class="marian-text"><strong>Begin with the Sign of the Cross:</strong><br />In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
+    <p class="marian-text"><strong>Begin with the Sign of the Cross:</strong><br>In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
 
-    <p class="marian-text"><strong>While holding the crucifix, pray the Apostles’ Creed:</strong><br />I believe in God, the Father Almighty, <br />
-    creator of heaven and earth. <br />
-    I believe in Jesus Christ, his only Son, our Lord, <br />
-    who was conceived by the Holy Spirit, <br />
-    born of the Virgin Mary, <br />
-    suffered under Pontius Pilate, <br />
-    was crucified, died, and was buried; <br />
-    he descended to the dead. <br />
-    On the third day he rose again; <br />
-    he ascended into heaven, <br />
-    is seated at the right hand of the Father, <br />
-    and will come again to judge the living and the dead. <br />
-    I believe in the Holy Spirit, <br />
-    the holy catholic church, <br />
-    the communion of saints, <br />
-    the forgiveness of sins, <br />
-    the resurrection of the body, <br />
-    and the life everlasting. Amen. </p><br />
+    <p id="ourFather" class="marian-text"><strong>Our Father...</strong><br>Give us today our supersubstantial bread... Amen.</p>
 
-    <p id="ourFather" class="marian-text"><strong><br />Our Father, which art in heaven, sanctified be thy name.<br />
-    Let thy kingdom come. Thy will be done, as in heaven, in earth also.<br />
-    Give us today our supersubstantial bread, and forgive us our debts, as we also forgive our debtors.<br />
-    And lead us not into tentation, but deliver us from evil. Amen.<br /> </p>
+    <div class="mystery-nav">
+      <button class="scroll-button" onclick="scrollWithOffset('first-mystery')">✝ Go to First Mystery</button>
+      <button class="scroll-button" onclick="scrollWithOffset('second-mystery')">✝ Go to Second Mystery</button>
+      <button class="scroll-button" onclick="scrollWithOffset('third-mystery')">✝ Go to Third Mystery</button>
+      <button class="scroll-button" onclick="scrollWithOffset('fourth-mystery')">✝ Go to Fourth Mystery</button>
+      <button class="scroll-button" onclick="scrollWithOffset('fifth-mystery')">✝ Go to Fifth Mystery</button>
+    </div>
 
-    <p class="marian-text"><strong>Then pray:</strong><br />Three <em>Hail Marys</em> (for Faith, Hope, and Charity), and one <em>Glory Be</em>.</p>
-    <button class="scroll-button" onclick="scrollWithOffset('first-mystery')">✝ Go to First Mystery</button>
-    <button class="scroll-button" onclick="scrollWithOffset('second-mystery')">✝ Go to Second Mystery</button>
-    <button class="scroll-button" onclick="scrollWithOffset('third-mystery')">✝ Go to Third Mystery</button>
-    <button class="scroll-button" onclick="scrollWithOffset('fourth-mystery')">✝ Go to Fourth Mystery</button>
-    <button class="scroll-button" onclick="scrollWithOffset('fifth-mystery')">✝ Go to Fifth Mystery</button>
-
-    <p class="marian-text"><strong>Hail Mary Prayer:</strong><br /> <em> Hail Mary full of grace, <br />
-    the Lord is with Thee, <br />
-    blessed art though among women, <br />
-    and blessed is the fruit of thy womb Jesus. <br />
-    Holy Mary Mother of God, Pray for us sinners, <br />
-    now and at the hour of our death; amen.<br /> </p>
-
-    <p class = "marian-text"><strong>Pray:</strong><br /> <em>Glory Be to the Father, and to the Son, and to the Holy Ghost,<br />
-    Even as it was in the beginning, and now, and ever: and world without end. Amen.<br /> </em> </p>
-
-    <p class = "marian-text"><strong>For each decade:</strong><br />Announce the mystery, pause for reflection, then pray:<br />One <em>Our Father</em>, ten <em>Hail Marys</em>, and one <em>Glory Be</em>.</p>
-
-        <p class = "marian-text"><strong>After each decade:</strong><br />You may add: “O My Jesus, forgive us our sins,<br />
-    save us from the fires of Hell and lead all souls to Heaven,<br />
-    especially those who are in most need of Thy mercy; amen."<br />
-    <button class="scroll-button" onclick="scrollWithOffset('first-mystery')">✝ Go to First Mystery</button>
-    <button class="scroll-button" onclick="scrollWithOffset('second-mystery')">✝ Go to Second Mystery</button>
-    <button class="scroll-button" onclick="scrollWithOffset('third-mystery')">✝ Go to Third Mystery</button>
-    <button class="scroll-button" onclick="scrollWithOffset('fourth-mystery')">✝ Go to Fourth Mystery</button>
-    <button class="scroll-button" onclick="scrollWithOffset('fifth-mystery')">✝ Go to Fifth Mystery</button>
-
-      <p class = "marian-text"><strong>Closing Prayers:</strong><br /> <em>
-    Hail, holy Queen, Mother of Mercy,<br />
-    our life, our sweetness, and our hope.<br />
-    To Thee do we cry, poor banished children of Eve.<br />
-    To Thee do we send up our sighs,<br />
-    mourning and weeping in this valley of tears.<br />
-    Turn then, most gracious advocate,<br />
-    thine eyes of mercy toward us,<br />
-    and after this our exile,<br />
-    show unto us the blessed fruit of thy womb, Jesus.<br />
-    O clement, O loving, O sweet Virgin Mary.<br /> </em>
-          .</p>
-
-    <p class="marian-text"><strong>Optional:</strong> Conclude with the <a href="/litanie-lauretane_en.html">Litany of Loreto</a> or another Marian devotion.</p>
+    <p class="marian-text"><strong>Hail Mary Prayer:</strong><br><em>Hail Mary full of grace... blessed art thou among women... amen.</em></p>
 
     <div class="archive-links">
-      🔗 <strong>Rosary Archive Resources</strong><br />
-      <a href="https://sf-rocker.github.io/rosary-archive/howtopray">How to Pray the Rosary</a> &nbsp;|&nbsp;
-      <a href="https://sf-rocker.github.io/rosary-archive/creed">Apostle's Creed</a> &nbsp;|&nbsp;
-      <a href="https://sf-rocker.github.io/rosary-archive/hail-mary-prayer">Hail Mary Prayer</a> &nbsp;|&nbsp;
-      <a href="https://sf-rocker.github.io/rosary-archive/litanie-lauretane_en">Litany of Loreto</a> &nbsp;|&nbsp;
-      <a href="https://sf-rocker.github.io/rosary-archive/holy-queen-prayer">Hail Holy Queen Prayer</a> &nbsp;|&nbsp;
-      <a href="https://sf-rocker.github.io/rosary-archive/glorybe">Glory Be Prayer</a> &nbsp;|&nbsp;
-      <a href="https://sf-rocker.github.io/rosary-archive/joyful">Joyful Mysteries</a> &nbsp;|&nbsp;
-      <a href="https://sf-rocker.github.io/rosary-archive/glorious">Glorious Mysteries</a> &nbsp;|&nbsp;
-      <a href="https://sf-rocker.github.io/rosary-archive/light">Mysteries of Light</a> &nbsp;|&nbsp;
-      <a href="https://sf-rocker.github.io/rosary-archive/St-Michael-Prayer">St. Michael Prayer</a> &nbsp;|&nbsp;
-      <a href="http://www.rosary-archive.org/">Rosary Archive</a>
+      <a href="http://www.rosary-archive.org/">Rosary Archive Home</a>
     </div>
   </section>
 
 </body>
-<script>
-  function scrollToOurFather() {
-    const prayer = document.getElementById("ourFather");
-    if (prayer) {
-      prayer.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-</script>
-<style>
-  #firstMysteryBtn {
-    background-color: #003366; /* Marian Blue */
-    color: #ffff66; /* Yellow stars */
-    border: 2px solid #ffff66;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
-    transition: transform 0.2s ease;
-    margin-top: 20px;
-  }
-
-  #firstMysteryBtn:hover {
-    transform: scale(1.05);
-    background-color: #002244;
-  }
-</style>
 </html>
-
