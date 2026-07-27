@@ -151,65 +151,7 @@
     <img src="/glorious/rosary.png" alt="Rosary" class="rosary-right">
   </div>
 
-  <div class="mysteries">
-    <div class="mystery">
-      <h2>First Glorious Mystery: The Resurrection</h2>
-      <p id="first-mystery">"And in the first of the sabbath<br />
-      very early they came to the monument,<br />
-      carrying the spices which they had prepared:<br />
-      and they found the stone rolled back from the monument.<br />
-      And going in they found not the body of our Lord Jesus.<br />
-      And it came to pass, as they were astonied in their mind at this,<br />
-      behold two men stood beside them in glistering apparel.<br />
-      And when they feared,<br />
-      and cast down their countenance toward the ground,<br />
-      they said unto them:Why seek you the living with the dead?" <br /> (Lk 24:1–5)</p>
-      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
-    </div>
-
-    <div class="mystery">
-      <h2>Second Glorious Mystery: The Ascension</h2>
-      <p>"And so our Lord Jesus after he spake unto them, was assumpted* into heaven, and sat on the right hand of God." (Mk 16:19)</p>
-      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
-    </div>
-
-    <div class="mystery">
-      <h2>Third Glorious Mystery: The Descent of the Holy Ghost</h2>
-      <p id = "third-mystery">"And when the days of Pentecost were accomplished, <br />
-      they were all together in one place: <br />
-      and suddenly there was made a sound from heaven, <br />
-      as of a vehement wind coming, <br />
-      and it filled the whole house where they were sitting. <br />
-      And there appeared to them parted tongues as it were of fire, <br />
-      and it sat upon every one of them: <br />
-      And they were all replenished with the Holy Spirit, <br />
-      and they began to speak with diverse tongues, <br />
-      according as the Holy Ghost gave them to speak."  <br /> (Acts 2:1–4)</p>
-      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
-    </div>
-
-    <div class="mystery">
-      <h2>Fourth Glorious Mystery: The Assumption</h2>
-      <p id = "fourth-mystery">"Because he hath regarded the humility of his handmaid: <br />
-      For behold from henceforth <br />
-      all generations shall call me blessed. <br />
-      Because he that is mighty <br />
-      hath done great things to me: <br />
-      And holy is his name."  <br /> (Lk 1:48–49)</p>
-      <button class="scroll-button" onclick="scrollWithOffset('ourFather')"">🕊️ Proceed to Our Father</button>
-    </div>
-
-    <div class="mystery">
-      <h2>Fifth Glorious Mystery: The Crowning of Our Lady Queen of Heaven</h2>
-      <p id = "fifth-mystery">"And a great sign appeared in heaven: <br />
-      A woman clothed with the <br />
-      sun and the moon under her feet, <br />
-      and on her head a crown of twelve stars." <br />  (Apoc 12:1)</p>
-      <button class="scroll-button" onclick="scrollWithOffset('ourFather')"">🕊️ Proceed to Our Father</button>
-    </div>
-  </div>
-
- <section class="rosary-instructions">
+  <section class="rosary-instructions">
     <h2>🕊️ How to Pray the Rosary</h2>
 
     <p class="marian-text"><strong>Begin with the Sign of the Cross:</strong><br />In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
@@ -265,7 +207,8 @@
         <button class="scroll-button" onclick="scrollWithOffset('fourth-mystery')">🕊️ Go to Fourth Mystery</button>
         <button class="scroll-button" onclick="scrollWithOffset('fifth-mystery')">🕊️ Go to Fifth Mystery</button>
 
-      <p class="marian-text"><strong>Closing Prayers:</strong><br /> <em>
+     <p class="marian-text" id="closingPrayers"><strong>Closing Prayers:</strong><br />
+  <em>
     Hail, holy Queen, Mother of Mercy,<br />
     our life, our sweetness, and our hope.<br />
     To Thee do we cry, poor banished children of Eve.<br />
@@ -275,12 +218,76 @@
     thine eyes of mercy toward us,<br />
     and after this our exile,<br />
     show unto us the blessed fruit of thy womb, Jesus.<br />
-    O clement, O loving, O sweet Virgin Mary.<br /> </em>
-            .</p>
+    O clement, O loving, O sweet Virgin Mary.<br />
+  </em>
+</p>
+
 
     <p class="marian-text"><strong>Optional:</strong> Conclude with the <a href="/litanie-lauretane_en.html">Litany of Loreto</a> or another Marian devotion.</p>
 
     <hr style="margin-top:3rem; border:none; border-top:1px solid #ccc;">
+  <div class="mysteries">
+    <div class="mystery">
+      <h2>First Glorious Mystery: The Resurrection</h2>
+      <p id="first-mystery">"And in the first of the sabbath<br />
+      very early they came to the monument,<br />
+      carrying the spices which they had prepared:<br />
+      and they found the stone rolled back from the monument.<br />
+      And going in they found not the body of our Lord Jesus.<br />
+      And it came to pass, as they were astonied in their mind at this,<br />
+      behold two men stood beside them in glistering apparel.<br />
+      And when they feared,<br />
+      and cast down their countenance toward the ground,<br />
+      they said unto them:Why seek you the living with the dead?" <br /> (Lk 24:1–5)</p>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
+    </div>
+
+    <div class="mystery">
+      <h2>Second Glorious Mystery: The Ascension</h2>
+      <p>"And so our Lord Jesus after he spake unto them, was assumpted* into heaven, and sat on the right hand of God." (Mk 16:19)</p>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
+    </div>
+
+    <div class="mystery">
+      <h2>Third Glorious Mystery: The Descent of the Holy Ghost</h2>
+      <p id = "third-mystery">"And when the days of Pentecost were accomplished, <br />
+      they were all together in one place: <br />
+      and suddenly there was made a sound from heaven, <br />
+      as of a vehement wind coming, <br />
+      and it filled the whole house where they were sitting. <br />
+      And there appeared to them parted tongues as it were of fire, <br />
+      and it sat upon every one of them: <br />
+      And they were all replenished with the Holy Spirit, <br />
+      and they began to speak with diverse tongues, <br />
+      according as the Holy Ghost gave them to speak."  <br /> (Acts 2:1–4)</p>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
+    </div>
+
+    <div class="mystery">
+      <h2>Fourth Glorious Mystery: The Assumption</h2>
+      <p id = "fourth-mystery">"Because he hath regarded the humility of his handmaid: <br />
+      For behold from henceforth <br />
+      all generations shall call me blessed. <br />
+      Because he that is mighty <br />
+      hath done great things to me: <br />
+      And holy is his name."  <br /> (Lk 1:48–49)</p>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')"">🕊️ Proceed to Our Father</button>
+    </div>
+
+    <div class="mystery">
+      <h2>Fifth Glorious Mystery: The Crowning of Our Lady Queen of Heaven</h2>
+      <p id = "fifth-mystery">"And a great sign appeared in heaven: <br />
+      A woman clothed with the <br />
+      sun and the moon under her feet, <br />
+      and on her head a crown of twelve stars." <br />  (Apoc 12:1)</p>
+      <button class="scroll-button" onclick="scrollWithOffset('ourFather')"">🕊️ Proceed to Our Father</button>
+      <button class="scroll-button" onclick="scrollToClosingPrayers()">
+  🙏 Proceed to Closing Prayers
+</button>
+    </div>
+  </div>
+
+
 
     <div class="archive-links">
       🔗 <strong>Rosary Archive Resources</strong><br />
@@ -311,6 +318,14 @@
 <script>
   function scrollToOurFather() {
     const prayer = document.getElementById("ourFather");
+    if (prayer) {
+      prayer.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+</script>
+<script>
+  function scrollToClosingPrayers() {
+    const prayer = document.getElementById("closingPrayers");
     if (prayer) {
       prayer.scrollIntoView({ behavior: "smooth" });
     }
