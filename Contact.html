@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Facebook Page</title>
+  <style>
+    :root {
+      --marian-blue: #1E3A8A;
+      --marian-blue-light: #3B5CC4;
+      --text-light: #FFFFFF;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, sans-serif;
+      background: radial-gradient(circle at top, var(--marian-blue-light), var(--marian-blue));
+      color: var(--text-light);
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .link-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 1.1rem;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1rem 1.4rem;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      max-width: 600px;
+    }
+
+    .profile-pic {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .fb-link {
+      display: block;
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-all; /* forces long URLs to display */
+    }
+
+    .fb-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="link-box">
+    <img class="profile-pic" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-1/758409368_1077793511485698_3306714795312707428_n.jpg?stp=dst-jpg_tt6&cstp=mx225x224&ctp=s200x200&_nc_cat=107&ccb=1-7&_nc_sid=1d2534&_nc_ohc=B7jVSQjecHsQ7kNvwF_PmpI&_nc_oc=AdqmLu7lATf4Up6YYfwfBK_b7bmYBxak7hHaiARRPDw0qPKE4V9SEQaUmZ3FFxDTzCo&_nc_zt=24&_nc_ht=scontent-dfw5-2.xx&_nc_gid=nuKw5QoyiV67HqE1dwT9Qg&_nc_ss=7b2a8&oh=00_AQB9byhTGJvPIh3H5SH9bUV_cmCl6ZWSeH-G5s4swkhciA&oe=6A6CAF45" alt="My Facebook Profile Picture">
+
+    <a class="fb-link" href="https://www.facebook.com/Tjpen1996">
+      https://www.facebook.com/Tjpen1996
+    </a>
+  </div>
+</body>
+</html>

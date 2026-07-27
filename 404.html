@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 – Page Not Found</title>
+  <style>
+    :root {
+      /* Marian blue */
+      --marian-blue: #1E3A8A;
+      --marian-blue-light: #3B5CC4;
+      --text-light: #F9FAFB;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, var(--marian-blue-light), var(--marian-blue));
+      color: var(--text-light);
+    }
+
+    .wrapper {
+      text-align: center;
+      padding: 2.5rem 2rem;
+      max-width: 480px;
+    }
+
+    .code {
+      font-size: 5rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .message {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      opacity: 0.9;
+      margin-bottom: 1.75rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border-radius: 999px;
+      padding: 0.6rem 1.4rem;
+      font-size: 0.9rem;
+      border: 1px solid rgba(249, 250, 251, 0.6);
+      background: rgba(15, 23, 42, 0.25);
+      color: var(--text-light);
+      text-decoration: none;
+      backdrop-filter: blur(6px);
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn.primary {
+      background: var(--text-light);
+      color: var(--marian-blue);
+      border-color: transparent;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      background: rgba(15, 23, 42, 0.4);
+    }
+
+    .btn.primary:hover {
+      background: #E5E7EB;
+    }
+
+    .hint {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrapper">
+    <div class="code">404</div>
+    <div class="title">Page not found</div>
+    <p class="message">
+      The page you’re looking for seems to have drifted away.<br />
+      Check the URL, or head back to safer waters.
+    </p>
+    <div class="actions">
+      <a href="/index" class="btn primary">Back to home</a>
+      <a href="/Contact" class="btn">Contact support</a>
+    </div>
+    <p class="hint">
+      If you believe this is an error, please let us know.
+    </p>
+  </main>
+</body>
+</html>
