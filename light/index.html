@@ -159,44 +159,7 @@
     <img src="/sorrowful/rosary.png" alt="Rosary" class="rosary-right">
   </div>
 
- <div class="mysteries">
-  <div class="mystery">
-    <h2>First Mystery of Light: The Baptism in the Jordan</h2>
-    <p id="first-mystery">"And Jesus being baptized, <br />
-    forthwith came out of the water: and lo, <br />
-    the heavens were opened to him: <br />
-    and he saw the Spirit of God descending as a dove, <br />
-    and coming upon him. And behold a voice from heaven saying: <br />
-    This is my beloved son, in whom I am well pleased." (<i>Mt</i> 3:16-17)</p> <br />
-    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
-  </div>
-
-  <div class="mystery">
-    <h2>Second Mystery of Light: The Wedding at Cana</h2>
-    <p id = "second-mystery">"And the third day there was a marriage made in Cana of Galilee, and the mother of Jesus was there And Jesus also was called, his disciples, to the marriage. And the wine failing, the mother of Jesus saith to him: They have no wine. And Jesus saith to her: What is to me and thee, woman? my hour cometh not yet. His mother saith to the ministers: Whatsoever he shall say to you, do ye." (<i>Jn</i> 2:1–5)</p>
-    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
-  </div>
-
-  <div class="mystery">
-    <h2>Third Mystery of Light: The Proclamation of the Kingdom</h2>
-    <p id = "third-mystery">"and saying: That the time is fulfilled, and the kingdom of God is at hand: be penitent, and believe in the Gospel." (<i>Mk</i> 1:15)</p>
-    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
-  </div>
-
-  <div class="mystery">
-    <h2>Fourth Mystery of Light: The Transfiguration</h2>
-    <p id = "fourth-mystery">"And after six days Jesus taketh unto him Peter, and James, and John his brother, and bringeth them into a high mountain apart: And he was transfigured before them. And his face did shine as the sun: and his garments became white as snow." (<i>Mt</i> 17:1-2)</p>
-    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
-  </div>
-
-  <div class="mystery">
-    <h2>Fifth Mystery of Light: The Institution of the Eucharist</h2>
-    <p id = "fifth-mystery">"And whiles they were at supper, Jesus took bread, and blessed, and brake: and he gave to his disciples, and said: Take ye, and eat: THIS IS MY BODY." (<i>Mt</i> 26:26)</p>
-    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
-  </div>
-</div>
-
- <section class="rosary-instructions">
+  <section class="rosary-instructions">
     <h2>🕊️ How to Pray the Rosary</h2>
 
     <p class="marian-text"><strong>Begin with the Sign of the Cross:</strong><br />In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
@@ -253,7 +216,8 @@
     <button class="scroll-button" onclick="scrollWithOffset('fourth-mystery')">✝ Go to Fourth Mystery</button>
     <button class="scroll-button" onclick="scrollWithOffset('fifth-mystery')">✝ Go to Fifth Mystery</button>
 
-      <p class="marian-text"><strong>Closing Prayers:</strong><br /> <em>
+  <p class="marian-text" id="closingPrayers"><strong>Closing Prayers:</strong><br />
+  <em>
     Hail, holy Queen, Mother of Mercy,<br />
     our life, our sweetness, and our hope.<br />
     To Thee do we cry, poor banished children of Eve.<br />
@@ -263,12 +227,55 @@
     thine eyes of mercy toward us,<br />
     and after this our exile,<br />
     show unto us the blessed fruit of thy womb, Jesus.<br />
-    O clement, O loving, O sweet Virgin Mary.<br /> </em>
-        .</p>
+    O clement, O loving, O sweet Virgin Mary.<br />
+  </em>
+</p>
 
     <p class="marian-text"><strong>Optional:</strong> Conclude with the <a href="/litanie-lauretane_en.html">Litany of Loreto</a> or another Marian devotion.</p>
 
   <hr style="margin-top:3rem; border:none; border-top:1px solid #ccc;">
+
+
+ <div class="mysteries">
+  <div class="mystery">
+    <h2>First Mystery of Light: The Baptism in the Jordan</h2>
+    <p id="first-mystery">"And Jesus being baptized, <br />
+    forthwith came out of the water: and lo, <br />
+    the heavens were opened to him: <br />
+    and he saw the Spirit of God descending as a dove, <br />
+    and coming upon him. And behold a voice from heaven saying: <br />
+    This is my beloved son, in whom I am well pleased." (<i>Mt</i> 3:16-17)</p> <br />
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
+  </div>
+
+  <div class="mystery">
+    <h2>Second Mystery of Light: The Wedding at Cana</h2>
+    <p id = "second-mystery">"And the third day there was a marriage made in Cana of Galilee, and the mother of Jesus was there And Jesus also was called, his disciples, to the marriage. And the wine failing, the mother of Jesus saith to him: They have no wine. And Jesus saith to her: What is to me and thee, woman? my hour cometh not yet. His mother saith to the ministers: Whatsoever he shall say to you, do ye." (<i>Jn</i> 2:1–5)</p>
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
+  </div>
+
+  <div class="mystery">
+    <h2>Third Mystery of Light: The Proclamation of the Kingdom</h2>
+    <p id = "third-mystery">"and saying: That the time is fulfilled, and the kingdom of God is at hand: be penitent, and believe in the Gospel." (<i>Mk</i> 1:15)</p>
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
+  </div>
+
+  <div class="mystery">
+    <h2>Fourth Mystery of Light: The Transfiguration</h2>
+    <p id = "fourth-mystery">"And after six days Jesus taketh unto him Peter, and James, and John his brother, and bringeth them into a high mountain apart: And he was transfigured before them. And his face did shine as the sun: and his garments became white as snow." (<i>Mt</i> 17:1-2)</p>
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
+  </div>
+
+  <div class="mystery">
+    <h2>Fifth Mystery of Light: The Institution of the Eucharist</h2>
+    <p id = "fifth-mystery">"And whiles they were at supper, Jesus took bread, and blessed, and brake: and he gave to his disciples, and said: Take ye, and eat: THIS IS MY BODY." (<i>Mt</i> 26:26)</p>
+    <button class="scroll-button" onclick="scrollWithOffset('ourFather')">🕊️ Proceed to Our Father</button>
+    <button class="scroll-button" onclick="scrollToClosingPrayers()">
+  🙏 Proceed to Closing Prayers
+</button>
+  </div>
+</div>
+
 
   <div class="archive-links">
     🔗 <strong>Rosary Archive Resources</strong><br />
@@ -287,6 +294,14 @@
 <script>
   function scrollToOurFather() {
     const prayer = document.getElementById("ourFather");
+    if (prayer) {
+      prayer.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+</script>
+<script>
+  function scrollToClosingPrayers() {
+    const prayer = document.getElementById("closingPrayers");
     if (prayer) {
       prayer.scrollIntoView({ behavior: "smooth" });
     }
