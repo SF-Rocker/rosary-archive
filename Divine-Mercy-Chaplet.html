@@ -1,0 +1,135 @@
+<!-- ⭐ Marian Blue CSS -->
+<style>
+  .marian-text {
+    background-color: #e6f2ff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+
+  .archive-links {
+    margin-top: 30px;
+    font-size: 0.95rem;
+  }
+
+  .scroll-button {
+    padding: 10px 15px;
+    background-color: #d9e8ff;
+    border: 1px solid #aac4ff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+</style>
+
+<h1>🕊️🕊️ Divine Mercy Chaplet</h1>
+
+<div class="marian-text">
+  <p><strong>Introduction:</strong><br />
+    The Divine Mercy Chaplet is prayed on standard Rosary beads and focuses on trust
+    in Jesus and His infinite mercy. This version is simplified to avoid copyright issues
+    while keeping all essential prayers intact.
+  </p>
+</div>
+
+<h2 id="opening">Opening Prayers</h2>
+
+<div class="marian-text">
+  <p>
+    Begin with the Sign of the Cross. ✝ <br /><br />
+
+    <strong>Simple Opening:</strong><br />
+    <em>“Jesus, I trust in You. Have mercy on us and on the whole world.”</em>
+  </p>
+</div>
+
+<!-- Douay-Rheims Our Father -->
+<p class="marian-text">
+  <strong>Our Father:</strong><br />
+  <em>
+    Our Father which art in heaven, sanctified be thy name.<br />
+    Let thy Kingdom come. Thy will be done, as in heaven, in earth also.<br />
+    Give us today our supersubstantial bread.<br />
+    And forgive us our debts, as we also forgive our debtors,<br />
+    And lead us not into tentation. But deliver us from evil. Amen.
+  </em>
+</p>
+
+<button class="scroll-button" onclick="scrollToChapletBeads()">
+  ➡️ Begin the Chaplet
+</button>
+
+<hr />
+
+<h2 id="beads">How to Pray the Chaplet (Bead-by-Bead)</h2>
+
+<div class="marian-text">
+
+  <p><strong>On the Our Father bead (start of each decade):</strong><br />
+    <em>
+      “Eternal Father, I offer You the Body and Blood, Soul and Divinity
+      of Your dearly beloved Son, our Lord Jesus Christ,
+      in atonement for our sins and those of the whole world.”
+    </em>
+  </p>
+
+  <p><strong>On each of the 10 Hail Mary beads:</strong><br />
+    <em>“For the sake of His sorrowful Passion, have mercy on us and on the whole world.”</em>
+  </p>
+
+  <p><strong>Repeat this pattern for all 5 decades.</strong></p>
+
+</div>
+
+<button class="scroll-button" onclick="scrollToClosingDM()">
+  🙏 Proceed to Closing Prayer
+</button>
+
+<hr />
+
+<h2 id="closingDM">Conclusion</h2>
+
+<div class="marian-text">
+  <p><strong>Repeat 3 times:</strong><br />
+    <em>
+      “Holy God, Holy Mighty One, Holy Immortal One,
+      have mercy on us and on the whole world.”
+    </em>
+  </p>
+
+  <p><strong>Simple Closing:</strong><br />
+    <em>“Jesus, King of Mercy, we trust in You.”</em>
+  </p>
+</div>
+
+<hr />
+
+<!-- ⭐ ARCHIVE LINKS AT BOTTOM -->
+<div class="archive-links">
+  🔗 <strong>Rosary Archive Resources</strong><br />
+  <a href="https://sf-rocker.github.io/rosary-archive/howtopray">How to Pray the Rosary</a> &nbsp;|&nbsp;
+  <a href="https://sf-rocker.github.io/rosary-archive/creed">Apostle's Creed</a> &nbsp;|&nbsp;
+  <a href="https://sf-rocker.github.io/rosary-archive/hail-mary-prayer">Hail Mary Prayer</a> &nbsp;|&nbsp;
+  <a href="https://sf-rocker.github.io/rosary-archive/litanie-lauretane_en">Litany of Loreto</a> &nbsp;|&nbsp;
+  <a href="https://sf-rocker.github.io/rosary-archive/holy-queen-prayer">Hail Holy Queen Prayer</a> &nbsp;|&nbsp;
+  <a href="https://sf-rocker.github.io/rosary-archive/glorybe">Glory Be Prayer</a> &nbsp;|&nbsp;
+  <a href="https://sf-rocker.github.io/rosary-archive/sorrowful">Sorrowful Mysteries</a> &nbsp;|&nbsp;
+  <a href="https://sf-rocker.github.io/rosary-archive/glorious">Glorious Mysteries</a> &nbsp;|&nbsp;
+  <a href="https://sf-rocker.github.io/rosary-archive/light">Mysteries of Light</a> &nbsp;|&nbsp;
+  <a href="https://sf-rocker.github.io/rosary-archive/St-Michael-Prayer">St. Michael Prayer</a> &nbsp;|&nbsp;
+  <a href="http://www.rosary-archive.org/">Rosary Archive</a>
+</div>
+
+<!-- ⭐ WORKING SCROLL FUNCTIONS -->
+<script>
+  function scrollToChapletBeads() {
+    const section = document.getElementById("beads");
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function scrollToClosingDM() {
+    const section = document.getElementById("closingDM");
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
